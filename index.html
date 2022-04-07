@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="https://kit.fontawesome.com/2328e7e5e8.js" crossorigin="anonymous"></script>
+		<title>Grid</title>
+	</head>
+	<body>
+		<!-- =========================================
+            HEADER STARTS HERE 
+        =============================================-->
+        <header class="container-fluid header-container">
+
+        <!-- Nav Starts here -->
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid">
+					<!-- <a class="navbar-brand" href="#">Grid</a> -->
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<svg width="200" height="64" viewBox="0 0 200 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M98.1818 28.375H105.682C104.727 21.4716 98.642 16.6136 90.75 16.6136C81.5284 16.6136 74.4205 23.2614 74.4205 34.5795C74.4205 45.625 81.0682 52.4773 90.9034 52.4773C99.7159 52.4773 106.006 46.9034 106.006 37.7159V33.3182H91.3977V38.875H98.8977C98.7955 43.2045 95.8466 45.9489 90.9375 45.9489C85.3977 45.9489 81.9034 41.8068 81.9034 34.5114C81.9034 27.25 85.5341 23.142 90.8693 23.142C94.6705 23.142 97.2443 25.1023 98.1818 28.375ZM110.413 52H117.675V37.1875C117.675 33.9659 120.027 31.75 123.232 31.75C124.237 31.75 125.618 31.9205 126.3 32.142V25.6989C125.652 25.5455 124.749 25.4432 124.016 25.4432C121.084 25.4432 118.68 27.1477 117.726 30.3864H117.453V25.8182H110.413V52ZM129.054 52H136.315V25.8182H129.054V52ZM132.702 22.4432C134.866 22.4432 136.639 20.7898 136.639 18.7614C136.639 16.75 134.866 15.0966 132.702 15.0966C130.554 15.0966 128.781 16.75 128.781 18.7614C128.781 20.7898 130.554 22.4432 132.702 22.4432ZM150.78 52.4261C155.007 52.4261 157.206 49.9886 158.212 47.8068H158.518V52H165.678V17.0909H158.433V30.2159H158.212C157.24 28.0852 155.143 25.4773 150.763 25.4773C145.018 25.4773 140.161 29.9432 140.161 38.9432C140.161 47.7045 144.814 52.4261 150.78 52.4261ZM153.081 46.6477C149.518 46.6477 147.575 43.4773 147.575 38.9091C147.575 34.375 149.484 31.2557 153.081 31.2557C156.609 31.2557 158.587 34.2386 158.587 38.9091C158.587 43.5795 156.575 46.6477 153.081 46.6477Z" fill="#2D3436"/>
+						<path d="M47.25 17.6H22.75C20.817 17.6 19.25 19.0327 19.25 20.8V43.2C19.25 44.9673 20.817 46.4 22.75 46.4H47.25C49.183 46.4 50.75 44.9673 50.75 43.2V20.8C50.75 19.0327 49.183 17.6 47.25 17.6Z" stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M19.25 27.2H50.75" stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M29.75 46.4V27.2" stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+
+					</a>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>How it works</a
+								>
+							</li>
+							<div id="nav-dot"></div>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="#" style="color: #6c5ce7;">Who we are</a>
+							</li>
+							<div id="nav-dot"></div>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="#" style="color: #6c5ce7;">What we do</a>
+							</li>
+							<div id="nav-dot"></div>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#" style="color: #6c5ce7;">Contact us</a>
+							</li>
+					</div>
+					<button class="sign-in" type="submit">Sign in</button>
+				</div>
+			</nav>
+			<!-- =========================================
+				Nav Stops Here
+			=============================================-->
+
+			<!-- =========================================
+				Article starts here
+			=============================================-->
+			<article class="container header-article">
+				
+					<div class="header-bg">
+						<!--bg svg rectangle-->
+						<svg width="801" height="753" viewBox="0 0 801 753" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="-41" y="251" width="1376.03" height="767.907" rx="99" transform="rotate(-45 -41 251)" fill="rgba(255, 234, 167,.5)"/>
+						</svg>
+						<!--bg dots -->
+						<!-- <div class="dots-container">
+							<div id="dots-holder">
+								
+							</div>
+						</div>                     -->
+					</div>
+					<div class="header-contents">
+						<h1>Combine <span id="fine">fine</span> images</h1>
+						<h2>To represent a product</h2>
+						<div id="fine-fill"></div> <!--the overlay dark-green background on text-->
+					</div>
+					<!-- Grid Section Starts Here -->
+					<div class="container-fluid header-grid-container">
+						<div class="child-grid-container grid-item1">
+							<p>Use mixed grid with imagery, replace with your own photos and descriptions</p>
+						</div>
+						<div class="child-grid-container grid-item2">
+							<p>Image Title</p>
+						</div>
+						<div class="child-grid-container grid-item3">
+							<p>This is multipurpose grid, it fits for protfolio, services or agency web site</p>
+						</div>
+						<div class="child-grid-container grid-item4">
+							<!-- <p>Image Title</p> -->
+						</div>
+						<div class="child-grid-container grid-item5">
+							<!-- <p>Image Title</p> -->
+							<img src="/fill image.jpg" alt="" width="100%" height="100%">
+						</div>
+						<div class="child-grid-container grid-item6">
+							<h5>We aimed to deliver HQ templates for Figma</h5>
+							<p>Liked by 123 people</p>
+						</div>
+						<div class="child-grid-container grid-item7">
+							<!-- <p>Image Title</p> -->
+						</div>
+						<div class="child-grid-container grid-item8">
+							<p>Caption</p>
+						</div>
+						<div class="child-grid-container grid-item9">
+							<!-- <p>Image Title</p> -->
+						</div>
+						<div class="child-grid-container grid-item10">
+							<p>Learn more</p>
+						</div>
+					</div>
+
+			</article>
+
+			<!-- =========================================
+           PRICING SECTION STARTS HERE
+        =============================================-->
+		<section class="container">
+			<h1>Affordable pricing</h1>
+			<div class="pricing-option">
+				<h5>Bill me <span id="monthly">monthly</span></h5>
+				<div id="monthly-fill"></div> <!--the overlay yellow background on "monthly text"-->
+				<div id="dot"></div>
+				<h5>yearly</h5>
+			</div>
+			<!-- prices card container starts here -->
+			<div class="parent-pricing-container">
+			<!-- card 1 -->
+				<div class="pricing-container">
+					<h5 id="plan-title">Like a pussy</h5>
+					<h1 class="text-start plan-cost" style="font-weight: 800;">Free<span style="font-size: 10px;">/ FOREVER</span></h1>
+					<div class="price-features">
+						<div class="yes1">&check;</div>
+						<p>Components-driven system</p>
+					</div>
+					<div class="price-features">
+						<div class="yes1">&check;</div>
+						<p>Sales-boosting landing pages</p>
+					</div>
+					<div class="price-features">
+						<div class="yes1">&check;</div>
+						<p>Awesome Feather icons pack</p>
+					</div>
+					<button>Try for free</button>
+				</div>
+
+				<!-- card 2 -->
+				<div class="pricing-container">
+					<div class="card2-title">
+						<h5 id="plan-title"><span><i class="fa-solid fa-user"></i></span> Individual</h5>
+						<h5 class="best-selection">BEST!</h5>
+					</div>
+					<h1 class="text-start plan-cost" style="font-weight: 800;">$24<span style="font-size: 10px;">/ MONTH</span></h1>
+					<div class="price-features">
+						<div class="yes2">&check;</div>
+						<p>Components-driven system</p>
+					</div>
+					<div class="price-features">
+						<div class="yes2">&check;</div>
+						<p>Sales-boosting landing pages</p>
+					</div>
+					<div class="price-features">
+						<div class="yes2">&check;</div>
+						<p>Awesome Feather icons pack</p>
+					</div>
+					<div class="price-features">
+						<div class="yes2">&check;</div>
+						<p>Themed into 3 different styles</p>
+					</div>
+					<div class="price-features">
+						<div class="yes2">&check;</div>
+						<p>Will help to learn Figma</p>
+					</div>
+					<button>Regular license</button>
+				</div>
+
+							<!-- card 3 -->
+				<div class="pricing-container">
+					<h5 id="plan-title"><span><i class="fa-solid fa-user-group"></i></span> Corporate</h5>
+					<h1 class="text-start plan-cost" style="font-weight: 800;">$12<span style="font-size: 10px;">/ EDITOR</span></h1>
+					<div class="price-features">
+						<div class="yes3">&check;</div>
+						<p>Components-driven system</p>
+					</div>
+					<div class="price-features">
+						<div class="yes3">&check;</div>
+						<p>Sales-boosting landing pages</p>
+					</div>
+					<div class="price-features">
+						<div class="yes3">&check;</div>
+						<p>Awesome Feather icons pack</p>
+					</div>
+					<div class="price-features">
+						<div class="yes3">&check;</div>
+						<p>Themed into 3 different styles</p>
+					</div>
+					<button>Extended license</button>
+				</div>
+			</div>
+		</section>
+        </header>
+        <!-- =========================================
+            Article stops here
+        =============================================-->
+
+
+		
+		<script src="./js/bootstrap.min.js"></script>
+	</body>
+</html>
