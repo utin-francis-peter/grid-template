@@ -14,10 +14,13 @@
 	--h2-line-height: 77.45px;
 	--dark-yellow: #fdcb6e;
 	--dark-pink: #e84393;
+	--light-pink: #fd79a8;
 	--dark-green: #00b894;
+	--light-green: #55efc4;
 	--dark-purple: #6c5ce7;
 	--light-purple: #a29bfe;
 	--light-red: #ff7675;
+	--light-blue: #74b9ff;
 	--box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
 }
 
@@ -85,7 +88,6 @@ HEADER STYLING STARTS HERE
 header {
 	/* height: 1286px; */
 	/* width: 1440px; */
-	position: relative;
 	overflow: hidden;
 	/* border: 2px solid red; */
 	z-index: 10;
@@ -96,7 +98,7 @@ header {
 	overflow: hidden; */
 }
 
-.header-bg {
+.desktop-header-bg {
 	/* border: 2px solid black; */
 	/* background: rgb(255, 234, 167); */
 	position: absolute;
@@ -402,16 +404,365 @@ section h1 {
 	background: #55efc4;
 }
 
-/* BREAKPOINT STYLING STARTS HERE */
-@media screen and (max-width: 600px) {
-	.navbar .navbar-nav {
-	}
+/* ==================================================================================================== */
+/* MOBILE DEVICES STLING STARTS HERE */
+/* ================================================================================================== */
+/* mobile <article> styling */
+
+.mobile-header-wave {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+}
+
+.mobile-header-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.mobile-header-contents {
+	text-align: center;
+	z-index: 20;
+
+	position: relative;
+}
+#cool-fill {
+	position: absolute;
+	z-index: -1;
+	top: 52%;
+	left: 8px;
+
+	width: 119px;
+	height: 32px;
+	border-radius: 12px;
+	background: var(--light-green);
+}
+
+#yearly-fill {
+	position: absolute;
+	top: 19px;
+	left: -5px;
+	z-index: -1;
+
+	width: 71px;
+	height: 12px;
+	background: #fdcb6e;
+	border-radius: 12px;
+}
+.mobile-header-contents h1 {
+	font-size: 64px;
+	font-weight: 900;
+	margin-top: 0.75em;
+	margin-bottom: 0.2em;
+}
+.mobile-header-contents h2 {
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 0.4em;
+}
+.mobile-header-contents p {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+	margin-bottom: 1.2em;
+}
+.mobile-arrow-toggler {
+	width: 64px;
+	height: 64px;
+	margin: auto;
+	border-radius: 50%;
+	border: 2px solid var(--dark-purple);
+
+	position: relative;
+}
+#down-arrow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mobile-grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.9em;
+
+	margin-left: -40px;
+	margin-right: -40px;
+	margin-top: 2em;
+	/* margin-bottom: 1em; */
+}
+.mobile-grid-item1 {
+	grid-column: 1/2;
+	grid-row: 2/5;
+
+	background: var(--dark-yellow);
+}
+.mobile-grid-item2 {
+	grid-column: 2/4;
+	grid-row: 1/4;
+
+	background: var(--light-blue);
+}
+.mobile-grid-item3 {
+	grid-column: 4/5;
+	grid-row: 3/4;
+
+	background: var(--light-green);
+}
+.mobile-grid-item4 {
+	grid-column: 1/2;
+	grid-row: 5/8;
+
+	background: var(--light-green);
+}
+.mobile-grid-item5 {
+	grid-column: 2/3;
+	grid-row: 4/6;
+
+	background: var(--light-purple);
+}
+.mobile-grid-item6 {
+	grid-column: 3/5;
+	grid-row: 4/7;
+
+	background: var(--light-pink);
+}
+.mobile-grid-item7 {
+	grid-column: 2/3;
+	grid-row: 6/10;
+
+	background: var(--light-pink);
+}
+.mobile-grid-item8 {
+	grid-column: 3/5;
+	grid-row: 8/9;
+
+	width: 130px;
+	height: 37px;
+	margin-top: -40px;
+}
+
+.mobile-grid-item8 button {
+	width: 100%;
+	height: 100%;
+	border-radius: 24px;
+	border: none;
+	background-color: #000;
+	color: #fff;
+}
+
+/* Mobile <section> styling starts here */
+.mobile-section-header {
+	margin-bottom: 2.5em;
+}
+.mobile-section-header h2 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+}
+.mobile-section-header p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 32px;
+}
+#color-text {
+	color: var(--dark-purple);
+}
+
+.ui-benefits {
+	display: flex;
+	justify-content: space-between;
+	gap: 1em;
+
+	margin-top: 2.2em;
+	/* margin-bottom: 2.5em; */
+	height: auto;
+}
+.benefit {
+	/* width: 170px; */
+	position: relative;
+	height: 365px;
+	/* border: 2px solid orange; */
+}
+.benefit .icon {
+	width: 53px;
+	height: 53px;
+	background: var(--light-red);
+	border-radius: 12px;
+	border: none;
+	position: relative;
+}
+.benefit h2 {
+	margin-top: 0.5em;
+	font-size: 24px;
+	font-weight: 700;
+}
+.benefit p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 32px;
+	width: 150px;
+}
+.benefit button {
+	width: 109.5px;
+	height: 36px;
+	margin-top: 0.5em;
+	border-radius: 12px;
+	color: var(--dark-purple);
+	font-size: 18px;
+	font-weight: 700;
+	border: 2px solid #adadad;
+	background: white;
+
+	position: absolute;
+	bottom: 0;
+}
+.icon svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#mobile-pricing-header {
+	font-size: 32px;
+	font-weight: 700;
+	text-align: left;
+	margin-top: 2.3em;
+}
+#yearly {
+	position: relative;
+}
+
+/* ==================================================================
+BREAKPOINT STYLING STARTS HERE=======================================
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 360px) {
+	/* NAV STYLING */
 	.navbar .navbar-brand {
-		margin-left: -100px;
+		margin-left: -70px;
+	}
+
+	.desktop-logo {
+		display: none;
+	}
+
+	header,
+	section {
+		width: 360px;
+		/* background: yellow; */
+		/* border: 3px solid green; */
+		/* max-width: 360px; */
+	}
+	nav {
+		height: auto;
+		z-index: 20;
+	}
+	.navbar-nav a {
+		font-size: 16px;
+		color: #000 !important;
+	}
+
+	.mobile-logo h1 {
+		font-size: 24px;
+		font-weight: 700;
+		margin: auto;
+	}
+
+	.sign-in {
+		height: 40px;
+		width: 128px;
+		padding-bottom: 3px;
+		border-radius: 12px;
+		font-size: 18px;
+	}
+
+	.navbar-toggler {
+		font-size: 18px;
+	}
+	.navbar-toggler-icon {
+		width: 16px;
+	}
+	#nav-dot {
+		display: none;
+	}
+	#dot {
+		margin: 0 5px;
+	}
+	/* ARTICLE STLING STARTS HERE */
+
+	.desktop-header-bg svg {
+		display: none;
+	}
+
+	.header-grid-container {
+		display: none;
+	}
+	.header-contents {
+		display: none;
+	}
+
+	/* SECTION STYLING STARTS HERE */
+	.parent-pricing-container {
+		flex-direction: column;
+	}
+	.pricing-container {
+		width: 100%;
+		padding: 1em;
+		margin-bottom: 1em;
+		height: auto;
+		/* box-shadow: var(--box-shadow); */
+	}
+	.pricing-container button {
+		width: 80%;
+		font-size: 18px;
+		font-weight: 700;
+		height: 40px;
+		position: relative;
+		margin-top: 2.5em;
+	}
+	.pricing-container button:hover {
+		font-size: 18px;
+	}
+	/* #price-card-2 {
+		position: relative;
+		margin-top: 2em;
+	} */
+	.price-features {
+		font-size: 18px;
+		gap: 0;
+	}
+	.tick {
+		margin-right: 12px;
+	}
+	#plan-title {
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.plan-cost {
+		font-size: 30px;
+		font-weight: 700;
+	}
+	#affordable {
+		display: none;
+	}
+	#monthly-fill {
+		display: none;
+	}
+	.pricing-option,
+	.pricing-option h5 {
+		font-size: 24px;
+		font-weight: 400;
+		justify-content: start;
 	}
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
 	.navbar .navbar-nav {
 		margin: 0 auto;
 		gap: 2.5em;
@@ -423,5 +774,42 @@ section h1 {
 
 	.navbar .sign-in {
 		margin-right: 1em;
+	}
+
+	.mobile-logo {
+		display: none;
+	}
+
+	.mobile-header-contents {
+		display: none;
+	}
+
+	.mobile-header-bg {
+		display: none;
+	}
+
+	.mobile-arrow-toggler {
+		display: none;
+	}
+	.mobile-grid-container {
+		display: none;
+	}
+	.mobile-section-header {
+		display: none;
+	}
+	.ui-benefits {
+		display: none;
+	}
+	#mobile-pricing-header {
+		display: none;
+	}
+	.mobile-header-wave {
+		display: none;
+	}
+	.mobile-header-bg {
+		display: none;
+	}
+	#cool-fill {
+		display: none;
 	}
 }
